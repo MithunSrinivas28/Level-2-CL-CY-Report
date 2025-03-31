@@ -106,13 +106,13 @@ Docker spyware is a **containerized application** designed to **monitor a folder
 
 
 # Task 9:Hashing
-🔹 What is Hashing?
+##  What is Hashing?
 Hashing is the process of converting input data (e.g., a password) into a fixed-length, unique hash value using a mathematical function. It is one-way, meaning the original input cannot be retrieved from the hash. Hashing is commonly used in password security, data integrity, and digital signatures.
 
 ### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
 ![image](https://github.com/user-attachments/assets/98ee0515-12aa-43b3-be81-9fb6020e08f2)
 
-🔹 What I Learned About Hashing
+### What I Learned About Hashing
 SHA-256 – A widely used cryptographic hash function that generates a 256-bit fixed-length hash.
 
 Salting – Adding a random unique value (salt) to passwords before hashing to prevent attacks like rainbow tables.

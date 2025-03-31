@@ -101,7 +101,14 @@ Docker spyware is a **containerized application** designed to **monitor a folder
    docker exec -it spyware_container python /app/monitor.py
    ```
 
+# Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
+In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates, and triggering the search. We then extracted flight prices and saved them in a CSV file for further analysis.
 
+Key libraries used were Selenium (for browser automation), pandas (for handling CSV files), and time (for adding necessary delays). A crucial aspect was handling dynamic elements with WebDriverWait to ensure smooth execution. Additionally, using XPath for locating elements proved essential for interacting with the page.
+
+#### I couldn't scrape the flight ticket prices due to Google's anti-bot protection, so I used Selenium to capture an image of the website after the automation was completed.
+
+![google_flights_results](https://github.com/user-attachments/assets/548df9e2-849b-417b-be43-2f1159af6aa2)
 
 
 

@@ -15,8 +15,7 @@ I deployed a basic AWS Lambda function that returns "Hello, World!" using Python
 ![aws sucess](https://github.com/user-attachments/assets/780ae1d1-a28f-4750-8556-5b17ed9bf728)
 
 ![function code](https://github.com/user-attachments/assets/2c9ffd38-d19f-4d3c-996d-10384a07c8c8)
-
-![aws sucess](https://github.com/user-attachments/assets/eb414206-7990-4bdf-92bf-175306d5b918)
+![aws sucess](https://github.com/user-attachments/assets/f64abeca-b048-409d-a4c1-fca9a5a8e645)
 
 ---
 

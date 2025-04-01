@@ -11,6 +11,7 @@ This is the report of the all the tasks completed in the level 2 of Computing an
 AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
 
 I deployed a basic AWS Lambda function that returns "Hello, World!" using Python. I configured the function.I learned how to create, deploy, and test AWS Lambda functions. I also gained familiarity with the AWS Lambda management console and function triggers.
+
 ![628d06df-9131-4adb-8047-6c6d67ed43c5](https://github.com/user-attachments/assets/0ff96918-5589-488e-9723-90cbbe48f181)
 
 ![f4a4c57f-f9d1-4cf1-a7b2-e343269516d9](https://github.com/user-attachments/assets/858fcccf-8b88-4476-a10a-1b636e7978ea)

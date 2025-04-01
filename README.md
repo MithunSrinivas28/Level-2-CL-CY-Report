@@ -13,6 +13,7 @@ I deployed a basic AWS Lambda function that returns "Hello, World!" using Python
 ![f4a4c57f-f9d1-4cf1-a7b2-e343269516d9](https://github.com/user-attachments/assets/858fcccf-8b88-4476-a10a-1b636e7978ea)
 
   
+---
 
 # Task 2: Intro to Jenkins!
 
@@ -35,6 +36,45 @@ Test Reports → Jenkins runs automated tests and generates reports to verify if
 
 I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 🚀
 [Jenkins pipeline code](https://github.com/MithunSrinivas28/MARVEL-Codebase.git)
+---
+# Task 3:SSH
+
+## What is SSH?
+SSH (**Secure Shell**) is a cryptographic network protocol for securely accessing and managing remote systems over an unsecured network. It provides encrypted communication, authentication, and file transfer. SSH replaces insecure protocols like Telnet and supports key-based authentication, tunneling, and remote command execution, making it essential for secure server administration.
+![image](https://github.com/user-attachments/assets/01c62f6a-ea3a-4dbd-b039-ee685bc90534)
+
+
+Successfully completed Bandit levels 0-5. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
+
+
+### SSH Password Authentication Process
+
+1. **Client → Server:** Authentication Request  
+2. **Server → Client:** Password Prompt  
+3. **Client → Server:** Sends Password  
+4. **Server:** Verifies Password  
+   - ✅ **Correct:** Access Granted  
+   - ❌ **Incorrect:** Access Denied  
+
+
+### Learning SSH Commands
+
+The following SSH commands were learned and used:
+- `ssh username@hostname` – To connect to a remote server.
+- `ssh -p <port> username@hostname` – To connect via a non-default port.
+- `scp file user@host:path` – Securely copy files to a remote machine.
+- `cat` – View file contents.
+- `ls` – List files in a directory.
+- `cd` – Change directory.
+- `find` – Locate files.
+- `du -sh *` – Check file sizes.
+
+### OverTheWire Bandit 
+- **Level 0 → 1**: SSH login using provided credentials.
+- **Level 1 → 2**: Locating password in a text file.
+- **Level 2 → 3**: Handling spaces in filenames.
+- **Level 3 → 4**: Reading hidden files.
+- **Level 4 → 5**: Finding human-readable strings in binary files.
 
 # Task 5: Wireshark
 
@@ -61,6 +101,16 @@ Think of a **container** as a sealed box that holds your app and everything it d
 
 Docker is a tool that helps you package your application and everything it needs (code, libraries, and settings) into a **container**, so it can run the same way on any computer, server, or cloud.
 
+## Docker Workflow
+
+![image](https://github.com/user-attachments/assets/41eb9821-b59f-454c-84f1-bfcc8844c5e3)
+
+
+## Creating a Container
+
+![Pasted image 20250228193856](https://github.com/user-attachments/assets/0e0277cf-5298-453f-8cd3-93a00d380c98)
+
+
 I learned to create a Docker container and image by following these steps:
 
 1.Write a Dockerfile – Defined the base image, dependencies, and commands.
@@ -73,7 +123,7 @@ I learned to create a Docker container and image by following these steps:
 
 5.Push the image – Uploaded it to Docker Hub using docker push my_repo/my_image.
 
-
+---
 # Task 7:Docker Spyware
 
 
@@ -84,50 +134,45 @@ Docker spyware is a **containerized application** designed to **monitor a folder
 - **Surveillance and security applications**
 ---
 
+## Watchdog in Python: Real-Time File System Monitoring
+Python’s Watchdog module enables real-time monitoring of file system changes. It detects file creations, modifications, deletions, and movements using event handlers. Ideal for logging, automation, and security, Watchdog is widely used in file tracking, data pipelines, and intrusion detection for efficient and responsive system monitoring.
+
 ## **2. Task Summary**
-### **What We Did:**
+### **What I Did:**
 - Created a **Python script** to monitor a folder for new images.
 - Built a **Docker container** to run the script.
 - Tested the system by copying files to the monitored folder.
 - Verified automatic file uploads and troubleshooting errors.
 
-## **4. Task Process**
-1. **Created a Python script** (`monitor.py`) to detect and upload images.
-2. **Wrote a Dockerfile** to containerize the script.
-3. **Built and ran the container** using:
-   ```sh
-   docker build -t spyware_simulation .
-   docker run -d --name spyware_container spyware_simulation
-   ```
-4. **Tested file monitoring** by copying an image into the container:
-   ```sh
-   docker cp bird.jpg spyware_container:/app/monitored_folder
-   ```
-5. **Checked logs** to confirm automatic upload:
-   ```sh
-   docker logs spyware_container
-   ```
-6. **Debugged issues** using:
-   ```sh
-   docker restart spyware_container
-   docker exec -it spyware_container python /app/monitor.py
-   ```
+This setup is a Docker-based spyware simulation, where a script is actively watching a folder inside a container. Any new image added triggers an alert, indicating real-time surveillance on file changes
+![image](https://github.com/user-attachments/assets/6a36fdf2-29de-44f8-9730-38fe02414d64)
 
+---
 # Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
 
 In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates, and triggering the search. We then extracted flight prices and saved them in a CSV file for further analysis.
 
 Key libraries used were Selenium (for browser automation), pandas (for handling CSV files), and time (for adding necessary delays). A crucial aspect was handling dynamic elements with WebDriverWait to ensure smooth execution. Additionally, using XPath for locating elements proved essential for interacting with the page.
 
-#### I couldn't scrape the flight ticket prices due to Google's anti-bot protection, so I used Selenium to capture an image of the website after the automation was completed.
+
+## Intro to dynamic webscraping
+**Dynamic Scraping:** Extracting data from pages that load content dynamically using JavaScript (e.g., Selenium)
+This is the reason we use selenium instead of beautifulsoup
+
+#### Google Flights has strong anti-bot protection mechanisms, including dynamic content loading, CAPTCHA, and request blocking. These protections prevent automated scripts from accessing structured data directly. Instead of scraping, I used Selenium to take a screenshot as an alternative method to capture information.
 
 ![google_flights_results](https://github.com/user-attachments/assets/548df9e2-849b-417b-be43-2f1159af6aa2)
 
 
-
+---
 # Task 9:Hashing
 ###  What is Hashing?
 Hashing is the process of converting input data (e.g., a password) into a fixed-length, unique hash value using a mathematical function. It is one-way, meaning the original input cannot be retrieved from the hash. Hashing is commonly used in password security, data integrity, and digital signatures.
+
+### Why use hashing when its not reversible
+
+The main purpose of hashing, especially when dealing with passwords or sensitive data, is to ensure security in case of unauthorized access, while still allowing for the verification of that data.
+
 
 #### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
 ![image](https://github.com/user-attachments/assets/98ee0515-12aa-43b3-be81-9fb6020e08f2)
@@ -146,7 +191,7 @@ PBKDF2 – A hashing method that applies multiple iterations (e.g., 100,000 roun
 - Store the salt + hash for verification.
 - During login, recompute the hash with the stored salt and compare it to the stored hash.
 
-
+---
 # Task 10:N Map
 
 I got familiar with kali linux and Basic commands of Nmap.I learnt the importance of SSh and the types of penetration testing.I did scanning of of a target ip and found the open ports and their versions

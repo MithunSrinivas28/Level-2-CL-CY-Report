@@ -13,7 +13,6 @@ AWS Lambda is a serverless compute service that automatically runs code in respo
 I deployed a basic AWS Lambda function that returns "Hello, World!" using Python. I configured the function.I learned how to create, deploy, and test AWS Lambda functions . I also gained familiarity with the AWS Lambda management console and function triggers.
 ![aws sucess](https://github.com/user-attachments/assets/780ae1d1-a28f-4750-8556-5b17ed9bf728)
 
-
 ![function code](https://github.com/user-attachments/assets/2c9ffd38-d19f-4d3c-996d-10384a07c8c8)
 
   

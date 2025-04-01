@@ -1,4 +1,4 @@
-![f4a4c57f-f9d1-4cf1-a7b2-e343269516d9](https://github.com/user-attachments/assets/8185eb07-84d4-4b77-87cc-b30c6c757447)# Level-2-CL-CY-Report
+# Level-2-CL-CY-Report
 This is the report of the all the tasks completed in the level 2 of Computing and Cyber Security
 
 

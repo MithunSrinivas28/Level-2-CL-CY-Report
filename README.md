@@ -1,5 +1,18 @@
-# Level-2-CL-CY-Report
+![f4a4c57f-f9d1-4cf1-a7b2-e343269516d9](https://github.com/user-attachments/assets/8185eb07-84d4-4b77-87cc-b30c6c757447)# Level-2-CL-CY-Report
 This is the report of the all the tasks completed in the level 2 of Computing and Cyber Security
+
+
+# Task 1: AWS Lambda
+
+#### What is AWS Lambda and Why is it Used?
+AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
+
+I deployed a basic AWS Lambda function that returns "Hello, World!" using Python. I configured the function.I learned how to create, deploy, and test AWS Lambda functions, configure IAM roles for execution permissions, and understand event-driven execution models. I also gained familiarity with the AWS Lambda management console and function triggers.
+![628d06df-9131-4adb-8047-6c6d67ed43c5](https://github.com/user-attachments/assets/0ff96918-5589-488e-9723-90cbbe48f181)
+
+![f4a4c57f-f9d1-4cf1-a7b2-e343269516d9](https://github.com/user-attachments/assets/858fcccf-8b88-4476-a10a-1b636e7978ea)
+
+  
 
 # Task 2: Intro to Jenkins!
 
@@ -42,7 +55,7 @@ I captured network traffic using Wireshark, applied filters to identify packet l
 # Task 6:Docker
 
 
-## What is Docker?
+### What is Docker?
 
 Think of a **container** as a sealed box that holds your app and everything it depends on. This box works exactly the same wherever you open it—on your laptop, in a data center, or in the cloud
 
@@ -63,7 +76,6 @@ I learned to create a Docker container and image by following these steps:
 
 # Task 7:Docker Spyware
 
-# Docker Spyware Report
 
 ## **1. What is Docker Spyware?**
 Docker spyware is a **containerized application** designed to **monitor a folder for new files** (such as images) and automatically **send them to a remote server**. This concept is useful for:
@@ -102,6 +114,7 @@ Docker spyware is a **containerized application** designed to **monitor a folder
    ```
 
 # Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
+
 In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates, and triggering the search. We then extracted flight prices and saved them in a CSV file for further analysis.
 
 Key libraries used were Selenium (for browser automation), pandas (for handling CSV files), and time (for adding necessary delays). A crucial aspect was handling dynamic elements with WebDriverWait to ensure smooth execution. Additionally, using XPath for locating elements proved essential for interacting with the page.
@@ -113,10 +126,10 @@ Key libraries used were Selenium (for browser automation), pandas (for handling 
 
 
 # Task 9:Hashing
-##  What is Hashing?
+###  What is Hashing?
 Hashing is the process of converting input data (e.g., a password) into a fixed-length, unique hash value using a mathematical function. It is one-way, meaning the original input cannot be retrieved from the hash. Hashing is commonly used in password security, data integrity, and digital signatures.
 
-### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
+#### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
 ![image](https://github.com/user-attachments/assets/98ee0515-12aa-43b3-be81-9fb6020e08f2)
 
 ### What I Learned About Hashing

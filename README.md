@@ -150,7 +150,7 @@ Python’s Watchdog module enables real-time monitoring of file system changes. 
 - Verified automatic file uploads and troubleshooting errors.
 
 This setup is a Docker-based spyware simulation, where a script is actively watching a folder inside a container. Any new image added triggers an alert, indicating real-time surveillance on file changes
-![image](https://github.com/user-attachments/assets/6a36fdf2-29de-44f8-9730-38fe02414d64)
+![docker spyware](https://github.com/user-attachments/assets/6a36fdf2-29de-44f8-9730-38fe02414d64)
 
 ---
 # Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
@@ -180,7 +180,7 @@ The main purpose of hashing, especially when dealing with passwords or sensitive
 
 
 #### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
-![image](https://github.com/user-attachments/assets/98ee0515-12aa-43b3-be81-9fb6020e08f2)
+![hashed passords](https://github.com/user-attachments/assets/98ee0515-12aa-43b3-be81-9fb6020e08f2)
 
 ### What I Learned About Hashing
 SHA-256 – A widely used cryptographic hash function that generates a 256-bit fixed-length hash.

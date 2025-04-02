@@ -194,7 +194,8 @@ The main purpose of hashing, especially when dealing with passwords or sensitive
 
 
 #### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
-![Uploading hashing.png…]()
+![hashing](https://github.com/user-attachments/assets/8c028dee-39da-4737-a67d-ebe3016b3a76)
+
 
 ### What I Learned About Hashing
 SHA-256 – A widely used cryptographic hash function that generates a 256-bit fixed-length hash.

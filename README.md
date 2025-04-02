@@ -23,22 +23,21 @@ I deployed a basic AWS Lambda function that returns "Hello, World!" . I configur
 # Task 2: Intro to Jenkins!
 
 Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It automates the process of building, testing, and deploying your software (the dishes), following a recipe (pipeline) to make sure everything gets done properly. It uses specialized tools (plugins) to speed things up and gives you feedback on how well everything went, ensuring that your software gets to your customers (end-users) seamlessly.
-![jenkins workflow](https://github.com/user-attachments/assets/895a2100-9f75-4809-bb44-d8cdd54118a4)
+![3eaad6dc-952d-402b-baa1-7bd0fef3ccc1](https://github.com/user-attachments/assets/53ec0320-abfb-432a-bf3b-0c99574c3a54)
+![568177bd-3543-461f-9678-30112754df28](https://github.com/user-attachments/assets/764851fc-57fe-4240-9ea7-6cf8fdb0c5cf)
 
 
 ## Flowchart Explanation:
-Developer → Writes and updates code in a local environment.
 
-Code Repository → The developer pushes the code to a version control system (e.g., GitHub, GitLab).
+# Continuous Integration (CI) - Short Explanation
 
-Jenkins → Detects the code change and triggers a pipeline (automated process).
-
-Artifact Repository → If the build is successful, Jenkins stores artifacts (e.g., JAR, WAR files) in a repository like Nexus or JFrog Artifactory.
-
-Deployment → The built application is deployed to a staging/production server (e.g., AWS, Kubernetes).
-
-Test Reports → Jenkins runs automated tests and generates reports to verify if the application is working correctly.
-
+1. **Developers** commit code to a **repository**.
+2. The **CI Server** fetches the code and runs tests.
+3. If tests **fail**, developers get feedback to fix errors.
+4. If tests **pass**, the build moves to **Testers**.
+5. Testers validate and report issues if found.
+6. If successful, the build proceeds to **Release & Deploy**.
+7. Ensures **automation, faster feedback, and smoother deployments**.
 
 ![Screenshot 2025-03-14 181330](https://github.com/user-attachments/assets/00521370-498d-4230-8b5c-32c2b0e55ce8)
 

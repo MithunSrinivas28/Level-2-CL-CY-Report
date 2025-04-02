@@ -11,7 +11,7 @@ This is the report of the all the tasks completed in the level 2 of Computing an
 #### What is AWS Lambda and Why is it Used?
 AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
 
-I deployed a basic AWS Lambda function that returns "Hello, World!" using Python. I configured the function.I learned how to create, deploy, and test AWS Lambda functions . I also gained familiarity with the AWS Lambda management console and function triggers.
+I deployed a basic AWS Lambda function that returns "Hello, World!" . I configured the function.I learned how to create, deploy, and test AWS Lambda functions . I also gained familiarity with the AWS Lambda management console and function triggers.
 ![aws sucess](https://github.com/user-attachments/assets/780ae1d1-a28f-4750-8556-5b17ed9bf728)
 ![4f89c50f-e2bf-44a5-89a1-b86a2a700f15](https://github.com/user-attachments/assets/1f21813b-8049-4526-a5a4-e2964321f0f9)
 

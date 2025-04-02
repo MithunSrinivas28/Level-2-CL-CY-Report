@@ -113,22 +113,27 @@ Docker is a tool that helps you package your application and everything it needs
 
 
 ---
-## Creating a Container
+## Creating a Docker image
 
 ![creating a container](https://github.com/user-attachments/assets/3c070971-5804-41ef-9da0-6f2c97beae4c)
 
+# Dockerfile Explanation
 
-I learned to create a Docker container and image by following these steps:
+#### Defines a Base Image:
+`FROM python:3.10-slim` → Uses a lightweight Python 3.10 image.
 
-1.Write a Dockerfile – Defined the base image, dependencies, and commands.
+#### Sets the Working Directory:
+`WORKDIR /app` → All commands will run inside `/app`.
 
-2.Build the image – Used docker build -t my_image . to create a reusable image.
+#### Copies Files:
+`COPY . .` → Copies all files from the current directory to the container.
 
-3.Run a container – Used docker run -d --name my_container my_image to start a container from the image.
+#### Runs a Python Script:
+`CMD ["python", "-c", "print('Hello from Docker!')"]` → Executes a one-liner Python script when the container starts.
 
-4.Check running containers – Used docker ps to list active containers.
+#### Docker container 
+  `docker run --rm my-python-app`
 
-5.Push the image – Uploaded it to Docker Hub using docker push my_repo/my_image.
 
 ---
 # Task 7:Docker Spyware

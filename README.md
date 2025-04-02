@@ -39,6 +39,13 @@ Deployment → The built application is deployed to a staging/production server 
 
 Test Reports → Jenkins runs automated tests and generates reports to verify if the application is working correctly.
 
+
+![Screenshot 2025-03-14 181330](https://github.com/user-attachments/assets/00521370-498d-4230-8b5c-32c2b0e55ce8)
+
+![image](https://github.com/user-attachments/assets/60a5b256-366b-4990-83a2-bfd308dfcabb)
+
+
+
 I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 🚀
 
 

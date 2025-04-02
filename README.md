@@ -29,8 +29,6 @@ Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It 
 
 ## Flowchart Explanation:
 
-# Continuous Integration (CI) - Short Explanation
-
 1. **Developers** commit code to a **repository**.
 2. The **CI Server** fetches the code and runs tests.
 3. If tests **fail**, developers get feedback to fix errors.

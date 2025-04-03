@@ -12,20 +12,23 @@ This is the report of the all the tasks completed in the level 2 of Computing an
 AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
 
 I deployed a basic AWS Lambda function that returns "Hello, World!" . I configured the function.I learned how to create, deploy, and test AWS Lambda functions . I also gained familiarity with the AWS Lambda management console and function triggers.
-![aws sucess](https://github.com/user-attachments/assets/780ae1d1-a28f-4750-8556-5b17ed9bf728)
-![4f89c50f-e2bf-44a5-89a1-b86a2a700f15](https://github.com/user-attachments/assets/1f21813b-8049-4526-a5a4-e2964321f0f9)
+
+![aws sucess](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/aws%20sucess.jpg)
+![function code](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/function%20code.jpg)
 
 
-![function code](https://github.com/user-attachments/assets/2c9ffd38-d19f-4d3c-996d-10384a07c8c8)
+
+
 
 ---
 
 # Task 2: Intro to Jenkins!
 
 Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It automates the process of building, testing, and deploying your software (the dishes), following a recipe (pipeline) to make sure everything gets done properly. It uses specialized tools (plugins) to speed things up and gives you feedback on how well everything went, ensuring that your software gets to your customers (end-users) seamlessly.
-![3eaad6dc-952d-402b-baa1-7bd0fef3ccc1](https://github.com/user-attachments/assets/53ec0320-abfb-432a-bf3b-0c99574c3a54)
-![568177bd-3543-461f-9678-30112754df28](https://github.com/user-attachments/assets/764851fc-57fe-4240-9ea7-6cf8fdb0c5cf)
 
+![jenkins 1](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%201)
+
+![fd19fec6-f22a-49f3-8885-ab05d4580c20](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fd19fec6-f22a-49f3-8885-ab05d4580c20.jpg)
 
 ## Flowchart Explanation:
 
@@ -51,8 +54,7 @@ I installed Jenkins, created a pipeline, and defined stages for Build, Test, and
 ## What is SSH?
 SSH (**Secure Shell**) is a cryptographic network protocol for securely accessing and managing remote systems over an unsecured network. It provides encrypted communication, authentication, and file transfer. SSH replaces insecure protocols like Telnet and supports key-based authentication, tunneling, and remote command execution, making it essential for secure server administration.
 
-![ssh flow](https://github.com/user-attachments/assets/e841815f-6a8f-4937-8108-53953f2747aa)
-
+![ssh flow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh%20flow.png)
 
 Successfully completed Bandit levels 0-5. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
 
@@ -97,7 +99,8 @@ Wireshark is used for network troubleshooting, security analysis, and performanc
 ### What Did I Do in This Task?
 I captured network traffic using Wireshark, applied filters to identify packet loss and retransmissions, and analyzed latency using round-trip time graphs. I examined TCP streams, used statistical tools to interpret data, and diagnosed network issues. Additionally, I saved results for further analysis to improve network performance and security monitoring.
 
-![wireshark](https://github.com/user-attachments/assets/12d9faf0-c908-493e-96b5-42e56619d02b)
+![wireshark](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/wireshark.jpg)
+
 
 
 
@@ -112,14 +115,14 @@ Think of a **container** as a sealed box that holds your app and everything it d
 Docker is a tool that helps you package your application and everything it needs (code, libraries, and settings) into a **container**, so it can run the same way on any computer, server, or cloud.
 
 ## Docker Workflow
+![docker workflow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/docker%20workflow.png)
 
-![docker workflow](https://github.com/user-attachments/assets/69a57e0f-353c-4237-927f-01ef35bf89fd)
 
 
 ---
 ## Creating a Docker image
 
-![creating a container](https://github.com/user-attachments/assets/3c070971-5804-41ef-9da0-6f2c97beae4c)
+![creating a container](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/creating%20a%20container.png)
 
 # Dockerfile Explanation
 
@@ -161,7 +164,7 @@ Python’s Watchdog module enables real-time monitoring of file system changes. 
 - Verified automatic file uploads and troubleshooting errors.
 
 This setup is a Docker-based spyware simulation, where a script is actively watching a folder inside a container. Any new image added triggers an alert, indicating real-time surveillance on file changes
-![spyware](https://github.com/user-attachments/assets/684bba55-1fcb-4124-8771-9af5bc1d92db)
+![spyware](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/spyware.png)
 
 ---
 # Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
@@ -177,7 +180,7 @@ This is the reason we use selenium instead of beautifulsoup
 
 #### Google Flights has strong anti-bot protection mechanisms, including dynamic content loading, CAPTCHA, and request blocking. These protections prevent automated scripts from accessing structured data directly. Instead of scraping, I used Selenium to take a screenshot as an alternative method to capture information.
 
-![screenshot](https://github.com/user-attachments/assets/282dba0f-14c4-4afc-8f9b-5ae4bf9bb614)
+![screenshot](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/screenshot.png)
 
 
 ---
@@ -191,9 +194,8 @@ The main purpose of hashing, especially when dealing with passwords or sensitive
 
 
 #### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
-![hashing](https://github.com/user-attachments/assets/8c028dee-39da-4737-a67d-ebe3016b3a76)
 
-
+![hashing](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/hashing.png)
 ### What I Learned About Hashing
 SHA-256 – A widely used cryptographic hash function that generates a 256-bit fixed-length hash.
 

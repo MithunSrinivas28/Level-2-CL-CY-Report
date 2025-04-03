@@ -92,10 +92,13 @@ The following SSH commands were learned and used:
 
 # Task 4: Terraform
 
-# **Terraform AWS Infrastructure Deployment - Task Report**  
-
-## **Introduction**  
+## What is Terraform
 Terraform is an open-source **Infrastructure as Code (IaC)** tool that allows users to define and provision cloud resources in a **declarative** manner. Unlike traditional provisioning methods, Terraform automates the entire process, ensuring consistency, scalability, and efficiency. It supports multiple cloud providers such as AWS, Azure, and Google Cloud, making it a preferred choice for cloud infrastructure management.
+
+**Helpful analogy for it:**
+Terraform is like a cab driver for your cloud infrastructure.
+
+You tell it where to go (define resources), it plans the best route (terraform plan), and drives you there (terraform apply). If you change your destination (update infra), it adjusts. When the trip is over, you end it (terraform destroy).
 
 ## **Task Execution**  
 I installed Terraform and configured it to interact with AWS. The process began with **Terraform initialization**, where I used the command `terraform init` to download and set up necessary provider plugins. Following this, I configured AWS credentials to allow Terraform to create resources in my AWS account.
@@ -110,8 +113,8 @@ To clean up, I executed `terraform destroy`, which safely removed all deployed i
 
 ![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
 
-![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  
 
+![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
 ### What I learnt 
 - **Understanding Terraform Workflow:** Successfully navigated the process from initialization to deployment and teardown.  
 - **EC2 Instance Deployment:** Created and managed an AWS EC2 instance using Terraform configurations.  

@@ -88,6 +88,52 @@ The following SSH commands were learned and used:
 - **Level 3 → 4**: Reading hidden files.
 - **Level 4 → 5**: Finding human-readable strings in binary files.
 
+
+
+# Task 4: Terraform
+
+# **Terraform AWS Infrastructure Deployment - Task Report**  
+
+## **Introduction**  
+Terraform is an open-source **Infrastructure as Code (IaC)** tool that allows users to define and provision cloud resources in a **declarative** manner. Unlike traditional provisioning methods, Terraform automates the entire process, ensuring consistency, scalability, and efficiency. It supports multiple cloud providers such as AWS, Azure, and Google Cloud, making it a preferred choice for cloud infrastructure management.
+
+## **Task Execution**  
+I installed Terraform and configured it to interact with AWS. The process began with **Terraform initialization**, where I used the command `terraform init` to download and set up necessary provider plugins. Following this, I configured AWS credentials to allow Terraform to create resources in my AWS account.
+
+To deploy an AWS EC2 instance, I defined its configuration in a **Terraform configuration file**. This included specifying the Amazon Machine Image (AMI), instance type, and other key parameters. I then used `terraform plan` to preview the changes and `terraform apply` to provision the instance. Upon successful execution, I verified the instance's status in the **AWS Management Console**, confirming that it was running.
+
+As part of the learning process, I explored Terraform’s **state management system**. Terraform maintains a **state file** that keeps track of all managed resources, ensuring efficient updates and modifications. I used commands like `terraform show` to inspect the current state and `terraform state list` to view all managed resources.
+
+To clean up, I executed `terraform destroy`, which safely removed all deployed infrastructure. This step is crucial in cloud environments to prevent unnecessary resource consumption and costs.
+![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
+
+
+![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
+
+![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  
+
+### What I learnt 
+- **Understanding Terraform Workflow:** Successfully navigated the process from initialization to deployment and teardown.  
+- **EC2 Instance Deployment:** Created and managed an AWS EC2 instance using Terraform configurations.  
+- **Terraform State Management:** Explored how Terraform tracks resources and maintains state consistency.  
+- **Infrastructure Automation:** Learned how Terraform eliminates manual intervention, ensuring reliable infrastructure provisioning.  
+- **Efficient Resource Management:** Practiced using `terraform destroy` to remove resources, optimizing cloud costs.  
+
+## **Advanced Terraform Concepts**  
+While working on this task, I also explored some advanced Terraform topics:  
+
+### **1. Terraform Modules**  
+Terraform **modules** allow reusability and better code organization. Instead of writing the same configuration repeatedly, I can use modules to encapsulate logic and call them as needed.  
+
+### **2. Terraform Remote State**  
+By default, Terraform stores its state file locally, but in production, it’s recommended to use **remote state storage** such as AWS S3 with **state locking** via DynamoDB to prevent conflicts in a team environment.  
+
+### **3. Terraform Workspaces**  
+Workspaces allow managing multiple environments (e.g., dev, staging, production) within the same configuration, making it easier to switch between them.  
+
+### **4. Terraform Provisioners**  
+Provisioners like `remote-exec` and `local-exec` help execute scripts on newly provisioned instances, enabling automated configurations post-deployment.  
+
 # Task 5: Wireshark
 
 ### What is Wireshark?

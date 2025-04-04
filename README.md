@@ -56,18 +56,25 @@ SSH (**Secure Shell**) is a cryptographic network protocol for securely accessin
 
 ![ssh flow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh%20flow.png)
 
+
+I focused on the generation and handling of SSH key pairs using standard command-line tools. This exercise helped me understand the practical foundations of authentication and secure communication over SSH.
+
+---
+
+### Task Performed
+
+
+Below is a screenshot from the SSH key generation process:
+
+![SSH Key Generation Screenshot](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/image.png)
+
+I used the `ssh-keygen` utility to generate a 4096-bit RSA key pair. This involved creating both a private and a public key, which are used for secure, password-less authentication to remote systems.
+
+**Command used:**
+bash
+`ssh-keygen -t rsa -b 4096`
+
 Successfully completed Bandit levels 0-5. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
-
-
-### SSH Password Authentication Process
-
-1. **Client → Server:** Authentication Request  
-2. **Server → Client:** Password Prompt  
-3. **Client → Server:** Sends Password  
-4. **Server:** Verifies Password  
-   - ✅ **Correct:** Access Granted  
-   - ❌ **Incorrect:** Access Denied  
-
 
 ### Learning SSH Commands
 
@@ -82,13 +89,20 @@ The following SSH commands were learned and used:
 - `du -sh *` – Check file sizes.
 
 ### OverTheWire Bandit 
+
+#### Bandit Level - Hidden File
+
+The following screenshot shows the solution where the user accesses a hidden file `.hidden` inside the `inhere` directory.
+
+![Bandit Hidden File Solution](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/bandit.jpeg)
+
 - **Level 0 → 1**: SSH login using provided credentials.
 - **Level 1 → 2**: Locating password in a text file.
 - **Level 2 → 3**: Handling spaces in filenames.
 - **Level 3 → 4**: Reading hidden files.
 - **Level 4 → 5**: Finding human-readable strings in binary files.
 
-
+---
 
 # Task 4: Terraform
 
@@ -110,8 +124,7 @@ As part of the learning process, I explored Terraform’s **state management sys
 To clean up, I executed `terraform destroy`, which safely removed all deployed infrastructure. This step is crucial in cloud environments to prevent unnecessary resource consumption and costs.
 ![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
 
-
-![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
+![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  
 
 
 ![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)

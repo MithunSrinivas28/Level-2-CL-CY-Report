@@ -135,7 +135,7 @@ To clean up, I executed `terraform destroy`, which safely removed all deployed i
 - **Infrastructure Automation:** Learned how Terraform eliminates manual intervention, ensuring reliable infrastructure provisioning.  
 - **Efficient Resource Management:** Practiced using `terraform destroy` to remove resources, optimizing cloud costs.  
 
-## **Advanced Terraform Concepts**  
+## **Other Terraform Concepts**  
 While working on this task, I also explored some advanced Terraform topics:  
 
 ### **1. Terraform Modules**  

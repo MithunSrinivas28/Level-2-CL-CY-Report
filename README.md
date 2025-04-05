@@ -133,34 +133,23 @@ I captured network traffic using Wireshark, applied filters to identify packet l
 ### What is Docker?
 
 Think of a **container** as a sealed box that holds your app and everything it depends on. This box works exactly the same wherever you open it—on your laptop, in a data center, or in the cloud
-
 Docker is a tool that helps you package your application and everything it needs (code, libraries, and settings) into a **container**, so it can run the same way on any computer, server, or cloud.
-
 ## Docker Workflow
 ![docker workflow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/docker%20workflow.png)
-
 ---
 ## Creating a Docker image
-
 ![creating a container](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/creating%20a%20container.png)
-
 # Dockerfile Explanation
-
 #### Defines a Base Image:
 `FROM python:3.10-slim` → Uses a lightweight Python 3.10 image.
-
 #### Sets the Working Directory:
 `WORKDIR /app` → All commands will run inside `/app`.
-
 #### Copies Files:
 `COPY . .` → Copies all files from the current directory to the container.
-
 #### Runs a Python Script:
 `CMD ["python", "-c", "print('Hello from Docker!')"]` → Executes a one-liner Python script when the container starts.
-
 #### Docker container 
   `docker run --rm my-python-app`
-
 ---
 # Task 7:Docker Spyware
 
@@ -205,8 +194,6 @@ Hashing is the process of converting input data (e.g., a password) into a fixed-
 ### Why use hashing when its not reversible
 
 The main purpose of hashing, especially when dealing with passwords or sensitive data, is to ensure security in case of unauthorized access, while still allowing for the verification of that data.
-
-#### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
 
 ![hashing](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/hashing.png)
 ### What I Learned About Hashing

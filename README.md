@@ -40,9 +40,9 @@ Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It 
 6. If successful, the build proceeds to **Release & Deploy**.
 7. Ensures **automation, faster feedback, and smoother deployments**.
 
-![Screenshot 2025-03-14 181330](https://github.com/user-attachments/assets/00521370-498d-4230-8b5c-32c2b0e55ce8)
-
-![image](https://github.com/user-attachments/assets/60a5b256-366b-4990-83a2-bfd308dfcabb)
+### Task snippets 
+![Jenkins Flow 3](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%203.png)
+![Jenkins Flow 4](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%204.png)
 
 
 

@@ -16,10 +16,6 @@ I deployed a basic AWS Lambda function that returns "Hello, World!" . I configur
 ![aws sucess](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/aws%20sucess.jpg)
 ![function code](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/function%20code.jpg)
 
-
-
-
-
 ---
 
 # Task 2: Intro to Jenkins!
@@ -44,10 +40,7 @@ Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It 
 ![Jenkins Flow 3](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%203.png)
 ![Jenkins Flow 4](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%204.png)
 
-
-
 I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 🚀
-
 
 # Task 3:SSH
 
@@ -62,8 +55,6 @@ I focused on the generation and handling of SSH key pairs using standard command
 ---
 
 ### Task Performed
-
-
 Below is a screenshot from the SSH key generation process:
 
 ![SSH Key Generation Screenshot](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/image.png)
@@ -89,9 +80,8 @@ The following SSH commands were learned and used:
 - `du -sh *` – Check file sizes.
 
 ### OverTheWire Bandit 
-
+Successfully completed Bandit levels 0-5,13,18. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
 #### Bandit Level - Hidden File
-
 The following screenshot shows the solution where the user accesses a hidden file `.hidden` inside the `inhere` directory.
 
 ![Bandit Hidden File Solution](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/bandit.jpeg)
@@ -117,7 +107,6 @@ To clean up, I executed `terraform destroy`, which safely removed all deployed i
 ![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
 
 ![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  
-
 
 ![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
 ### What I learnt 
@@ -236,15 +225,12 @@ PBKDF2 – A hashing method that applies multiple iterations (e.g., 100,000 roun
 
 ---
 # Task 10:N Map
-
 I got familiar with kali linux and Basic commands of Nmap.I learnt the importance of SSh and the types of penetration testing.I did scanning of of a target ip and found the open ports and their versions
-
 ## KALI Linux commands
 
 ### Sudo command 
   In **Kali Linux** (and other Linux distributions), the `sudo` (short for "superuser do") command allows a permitted user to execute a command as the **superuser** (root) or another user, as specified by the security policy. It is primarily used for administrative tasks that require higher privileges than a normal user account.
 ![Pasted image 20241023150909](https://github.com/user-attachments/assets/4813f710-c3ec-42a9-8040-cbc584c4774a)
-
 
 Ping
 `ping` command is a network utility used to test the **reachability** of a host on an IP network. It is commonly used to check if a particular system (device, server, or host) is online and responding to network requests.
@@ -256,12 +242,3 @@ Ping
 The `-sn` option is used to perform a **ping scan** (also known as a "no port scan"). When you use this option, Nmap disables the default port scanning phase and instead focuses on **host discovery**. It checks whether the hosts on the network are up (alive) without probing their open ports.
 ![Pasted image 20241023180758](https://github.com/user-attachments/assets/81e38c11-ff09-464e-b7fc-c8122d0c62c6)
 
-Ping Scan (-sP): Discovers live hosts on a network by checking which IP addresses are active without scanning ports.
-
-Stealth Scan (-sS): Performs a SYN scan, which is faster and less likely to be detected by firewalls compared to a full connection scan.
-
-OS Detection (-O): Tries to determine the target’s operating system by analyzing network responses.
-
-Specific Port Scan (-p): Targets specific port(s) on the host instead of scanning all commonly used ports.
-
-Aggressive Scan (-A): Combines multiple scan types, including OS detection, version detection, script scanning, and traceroute.

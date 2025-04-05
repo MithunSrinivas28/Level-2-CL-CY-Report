@@ -96,12 +96,6 @@ The following screenshot shows the solution where the user accesses a hidden fil
 
 ![Bandit Hidden File Solution](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/bandit.jpeg)
 
-- **Level 0 → 1**: SSH login using provided credentials.
-- **Level 1 → 2**: Locating password in a text file.
-- **Level 2 → 3**: Handling spaces in filenames.
-- **Level 3 → 4**: Reading hidden files.
-- **Level 4 → 5**: Finding human-readable strings in binary files.
-
 ---
 
 # Task 4: Terraform
@@ -119,8 +113,6 @@ I installed Terraform and configured it to interact with AWS. The process began 
 
 To deploy an AWS EC2 instance, I defined its configuration in a **Terraform configuration file**. This included specifying the Amazon Machine Image (AMI), instance type, and other key parameters. I then used `terraform plan` to preview the changes and `terraform apply` to provision the instance. Upon successful execution, I verified the instance's status in the **AWS Management Console**, confirming that it was running.
 
-As part of the learning process, I explored Terraform’s **state management system**. Terraform maintains a **state file** that keeps track of all managed resources, ensuring efficient updates and modifications. I used commands like `terraform show` to inspect the current state and `terraform state list` to view all managed resources.
-
 To clean up, I executed `terraform destroy`, which safely removed all deployed infrastructure. This step is crucial in cloud environments to prevent unnecessary resource consumption and costs.
 ![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
 
@@ -135,28 +127,11 @@ To clean up, I executed `terraform destroy`, which safely removed all deployed i
 - **Infrastructure Automation:** Learned how Terraform eliminates manual intervention, ensuring reliable infrastructure provisioning.  
 - **Efficient Resource Management:** Practiced using `terraform destroy` to remove resources, optimizing cloud costs.  
 
-## **Other Terraform Concepts**  
-While working on this task, I also explored some advanced Terraform topics:  
-
-### **1. Terraform Modules**  
-Terraform **modules** allow reusability and better code organization. Instead of writing the same configuration repeatedly, I can use modules to encapsulate logic and call them as needed.  
-
-### **2. Terraform Remote State**  
-By default, Terraform stores its state file locally, but in production, it’s recommended to use **remote state storage** such as AWS S3 with **state locking** via DynamoDB to prevent conflicts in a team environment.  
-
-### **3. Terraform Workspaces**  
-Workspaces allow managing multiple environments (e.g., dev, staging, production) within the same configuration, making it easier to switch between them.  
-
-### **4. Terraform Provisioners**  
-Provisioners like `remote-exec` and `local-exec` help execute scripts on newly provisioned instances, enabling automated configurations post-deployment.  
 
 # Task 5: Wireshark
 
 ### What is Wireshark?
 Wireshark is a free and open-source packet analyzer used for capturing and inspecting network traffic in real-time. It helps diagnose network issues, analyze protocols, and detect security threats. Network administrators, cybersecurity professionals, and developers use it for troubleshooting, optimizing performance, and ensuring secure communications in various environments.
-
-### Why is Wireshark Used?
-Wireshark is used for network troubleshooting, security analysis, and performance optimization. It helps identify latency, packet loss, and retransmissions. Administrators use it to analyze protocols, detect cyber threats, and debug communication issues. Its graphical interface and filtering options make diagnosing problems easier, ensuring efficient network monitoring and performance tuning.
 
 ### What Did I Do in This Task?
 I captured network traffic using Wireshark, applied filters to identify packet loss and retransmissions, and analyzed latency using round-trip time graphs. I examined TCP streams, used statistical tools to interpret data, and diagnosed network issues. Additionally, I saved results for further analysis to improve network performance and security monitoring.
@@ -164,11 +139,7 @@ I captured network traffic using Wireshark, applied filters to identify packet l
 ![wireshark](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/wireshark.jpg)
 
 
-
-
-
 # Task 6:Docker
-
 
 ### What is Docker?
 
@@ -178,8 +149,6 @@ Docker is a tool that helps you package your application and everything it needs
 
 ## Docker Workflow
 ![docker workflow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/docker%20workflow.png)
-
-
 
 ---
 ## Creating a Docker image
@@ -203,10 +172,8 @@ Docker is a tool that helps you package your application and everything it needs
 #### Docker container 
   `docker run --rm my-python-app`
 
-
 ---
 # Task 7:Docker Spyware
-
 
 ## **1. What is Docker Spyware?**
 Docker spyware is a **containerized application** designed to **monitor a folder for new files** (such as images) and automatically **send them to a remote server**. This concept is useful for:
@@ -214,7 +181,6 @@ Docker spyware is a **containerized application** designed to **monitor a folder
 - **Remote data transfer**
 - **Surveillance and security applications**
 ---
-
 ## Watchdog in Python: Real-Time File System Monitoring
 Python’s Watchdog module enables real-time monitoring of file system changes. It detects file creations, modifications, deletions, and movements using event handlers. Ideal for logging, automation, and security, Watchdog is widely used in file tracking, data pipelines, and intrusion detection for efficient and responsive system monitoring.
 
@@ -235,7 +201,6 @@ In this task, I automated flight searching on Google Flights using Selenium. The
 
 Key libraries used were Selenium (for browser automation), pandas (for handling CSV files), and time (for adding necessary delays). A crucial aspect was handling dynamic elements with WebDriverWait to ensure smooth execution. Additionally, using XPath for locating elements proved essential for interacting with the page.
 
-
 ## Intro to dynamic webscraping
 **Dynamic Scraping:** Extracting data from pages that load content dynamically using JavaScript (e.g., Selenium)
 This is the reason we use selenium instead of beautifulsoup
@@ -243,8 +208,6 @@ This is the reason we use selenium instead of beautifulsoup
 #### Google Flights has strong anti-bot protection mechanisms, including dynamic content loading, CAPTCHA, and request blocking. These protections prevent automated scripts from accessing structured data directly. Instead of scraping, I used Selenium to take a screenshot as an alternative method to capture information.
 
 ![screenshot](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/screenshot.png)
-
-
 ---
 # Task 9:Hashing
 ###  What is Hashing?
@@ -253,7 +216,6 @@ Hashing is the process of converting input data (e.g., a password) into a fixed-
 ### Why use hashing when its not reversible
 
 The main purpose of hashing, especially when dealing with passwords or sensitive data, is to ensure security in case of unauthorized access, while still allowing for the verification of that data.
-
 
 #### The image shows a Python program for user authentication using hashed passwords. Users register and log in, with passwords stored securely in passwords.txt. The terminal confirms successful registration and login for users Marvel and UVCE.
 

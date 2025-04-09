@@ -162,8 +162,7 @@ Docker is a tool that helps you package your application and everything it needs
 `COPY . .` → Copies all files from the current directory to the container.
 #### Runs a Python Script:
 `CMD ["python", "-c", "print('Hello from Docker!')"]` → Executes a one-liner Python script when the container starts.
-#### Docker container 
-  `docker run --rm my-python-app`
+
 ---
 # Task 7:Docker Spyware
 

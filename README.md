@@ -2,19 +2,31 @@
 
 This is the report of the all the tasks completed in the level 2 of Computing and Cyber Security
 ---
-###  The Code Lives Here 💾.
-
-🔗 **[MARVEL-Codebase](https://github.com/MithunSrinivas28/MARVEL-Codebase.git)**
+🔗 **[CODES LINK](https://github.com/MithunSrinivas28/MARVEL-Codebase.git)**
 ---
 # Task 1: AWS Lambda
 
 #### What is AWS Lambda and Why is it Used?
 AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
 
-I deployed a basic AWS Lambda function that returns "Hello, World!" . I configured the function.I learned how to create, deploy, and test AWS Lambda functions . I also gained familiarity with the AWS Lambda management console and function triggers.
+## Task review
 
-![aws sucess](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/aws%20sucess.jpg)
-![function code](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/function%20code.jpg)
+![Lambda Task](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/lambda_task.jpg)
+ 
+![List of API](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/List%20of%20api.jpeg)
+
+![WebSocket Connected](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/socketconnected.png)
+
+
+
+I learnt how to create a lambda fucntion ,websockets api and link them with different routes know as connect disconnect and sendMessage,I then connect the url with the help of Thunderclient API(i also tried it with Postman API)The below snippets shows that two users being connected
+
+This task helped me to understand how to configure the aws lambdas and Api with permissions and environment variables. I also tried debugging 502 ERROR with the Cloud watch logs
+###  Final Lambda Result Output  
+![Final Lambda Result](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/final_result_lambda.png)
+
+
+
 
 ---
 
@@ -40,7 +52,7 @@ Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It 
 ![Jenkins Flow 3](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%203.png)
 ![Jenkins Flow 4](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%204.png)
 
-I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 🚀
+I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 
 
 # Task 3:SSH
 
@@ -80,7 +92,7 @@ The following SSH commands were learned and used:
 - `du -sh *` – Check file sizes.
 
 ### OverTheWire Bandit 
-Successfully completed Bandit levels 0-5,13,18. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
+Successfully completed Bandit levels 0-5,13,18. Gained proficiency in basic SSH operations.
 #### Bandit Level - Hidden File
 The following screenshot shows the solution where the user accesses a hidden file `.hidden` inside the `inhere` directory.
 
@@ -175,18 +187,17 @@ This setup is a Docker-based spyware simulation, where a script is actively watc
 ---
 # Task 8:Web Scraping and Automation - Flight Ticket Price Analysis
 
-In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates, and triggering the search. We then extracted flight prices and saved them in a CSV file for further analysis.
-
-Key libraries used were Selenium (for browser automation), pandas (for handling CSV files), and time (for adding necessary delays). A crucial aspect was handling dynamic elements with WebDriverWait to ensure smooth execution. Additionally, using XPath for locating elements proved essential for interacting with the page.
+In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates that is bengaluru to hyderabad, and triggering the search. I then extracted flight prices  and saved them in a CSV file for further analysis.
 
 ## Intro to dynamic webscraping
 **Dynamic Scraping:** Extracting data from pages that load content dynamically using JavaScript (e.g., Selenium)
 This is the reason we use selenium instead of beautifulsoup
 
-#### Google Flights has strong anti-bot protection mechanisms, including dynamic content loading, CAPTCHA, and request blocking. These protections prevent automated scripts from accessing structured data directly. Instead of scraping, I used Selenium to take a screenshot as an alternative method to capture information.
+![CSV BLR to HYD](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/csv_blr_to_hyd.jpg)
 
-![screenshot](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/screenshot.png)
 ---
+
+
 # Task 9:Hashing
 ###  What is Hashing?
 Hashing is the process of converting input data (e.g., a password) into a fixed-length, unique hash value using a mathematical function. It is one-way, meaning the original input cannot be retrieved from the hash. Hashing is commonly used in password security, data integrity, and digital signatures.
@@ -203,21 +214,9 @@ Salting – Adding a random unique value (salt) to passwords before hashing to p
 
 PBKDF2 – A hashing method that applies multiple iterations (e.g., 100,000 rounds) to slow down brute-force attacks.
 
-### Password Hashing Process
-
-- Generate a random salt.
-- Hash the password with SHA-256 & PBKDF2.
-- Store the salt + hash for verification.
-- During login, recompute the hash with the stored salt and compare it to the stored hash.
-
 ---
 # Task 10:N Map
-I got familiar with kali linux and Basic commands of Nmap.I learnt the importance of SSh and the types of penetration testing.I did scanning of of a target ip and found the open ports and their versions
-## KALI Linux commands
-
-### Sudo command 
-  In **Kali Linux** (and other Linux distributions), the `sudo` (short for "superuser do") command allows a permitted user to execute a command as the **superuser** (root) or another user, as specified by the security policy. It is primarily used for administrative tasks that require higher privileges than a normal user account.
-![Pasted image 20241023150909](https://github.com/user-attachments/assets/4813f710-c3ec-42a9-8040-cbc584c4774a)
+I got familiar with kali linux and Basic commands of Nmap.I learnt the importance of SSh and the types of penetration testing.I did scanning of of a target ip and found the open ports and their version
 
 Ping
 `ping` command is a network utility used to test the **reachability** of a host on an IP network. It is commonly used to check if a particular system (device, server, or host) is online and responding to network requests.

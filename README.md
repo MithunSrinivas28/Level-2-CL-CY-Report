@@ -69,7 +69,8 @@ I focused on the generation and handling of SSH key pairs using standard command
 ### Task Performed
 Below is a screenshot from the SSH key generation process:
 
-![SSH Key Generation Screenshot](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/image.png)
+![SSH Key Gen](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh_key_gen.png)
+
 
 I used the `ssh-keygen` utility to generate a 4096-bit RSA key pair. This involved creating both a private and a public key, which are used for secure, password-less authentication to remote systems.
 

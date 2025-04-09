@@ -22,7 +22,7 @@ AWS Lambda is a serverless compute service that automatically runs code in respo
 I learnt how to create a lambda fucntion ,websockets api and link them with different routes know as connect disconnect and sendMessage,I then connect the url with the help of Thunderclient API(i also tried it with Postman API)The below snippets shows that two users being connected
 
 This task helped me to understand how to configure the aws lambdas and Api with permissions and environment variables. I also tried debugging 502 ERROR with the Cloud watch logs
-###  Final Lambda Result Output  
+### Output 
 ![Final Lambda Result](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/final_result_lambda.png)
 
 
@@ -138,6 +138,8 @@ Wireshark is a free and open-source packet analyzer used for capturing and inspe
 I captured network traffic using Wireshark, applied filters to identify packet loss and retransmissions, and analyzed latency using round-trip time graphs. I examined TCP streams, used statistical tools to interpret data, and diagnosed network issues. Additionally, I saved results for further analysis to improve network performance and security monitoring.
 
 ![wireshark](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/wireshark.jpg)
+ 
+![Wireshark Graph](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/wireshark%20graph.jpg)
 
 
 # Task 6:Docker

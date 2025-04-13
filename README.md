@@ -7,10 +7,14 @@ This is the report of the all the tasks completed in the level 2 of Computing an
 # Task 1: AWS Lambda
 
 #### What is AWS Lambda and Why is it Used?
-AWS Lambda is a serverless compute service that automatically runs code in response to events, managing infrastructure and scaling automatically. It is used for event-driven applications, automation, and microservices without provisioning or managing servers.
+AWS lambda is a severless compute sercive which helps to run the events or a code without a server.The users has to pay for the run time of the event or the application which helps in scalability and cost cutting. Its a paradigm shift in the field of cloud which helped to manage the servers in a better way
 
-## Task review
 
+
+## Snippets of the task
+
+
+Flowchar of the Deploying  a chat app in Aws lambda
 ![Lambda Task](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/lambda_task.jpg)
  
 ![List of API](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/List%20of%20api.jpeg)
@@ -30,39 +34,34 @@ This task helped me to understand how to configure the aws lambdas and Api with 
 
 ---
 
-# Task 2: Intro to Jenkins!
-
-Jenkins is like a **highly efficient personal assistant** in a busy kitchen. It automates the process of building, testing, and deploying your software (the dishes), following a recipe (pipeline) to make sure everything gets done properly. It uses specialized tools (plugins) to speed things up and gives you feedback on how well everything went, ensuring that your software gets to your customers (end-users) seamlessly.
+# Task 2: Intoduction to Jenkins
+Jenkins is a Tool which automates the process of building,,testing and deploying the software with a pipeline. It is fundamentally used for the Core concept fo Devops known as CI/CD .Jenkins is used to integrate the works and versions of a soft seamlessly and provide it to the end users.
 
 ![jenkins 1](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%201)
 
 ![fd19fec6-f22a-49f3-8885-ab05d4580c20](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fd19fec6-f22a-49f3-8885-ab05d4580c20.jpg)
 
-## Flowchart Explanation:
-
-1. **Developers** commit code to a **repository**.
-2. The **CI Server** fetches the code and runs tests.
-3. If tests **fail**, developers get feedback to fix errors.
-4. If tests **pass**, the build moves to **Testers**.
-5. Testers validate and report issues if found.
-6. If successful, the build proceeds to **Release & Deploy**.
-7. Ensures **automation, faster feedback, and smoother deployments**.
-
+## Key learnings
+- I learnt the concept of CI/CD  and how it works in the the field of Devops
+- I studied how to write a Jenkins file and implement it
+- Got familar with using Jenkins
+- I leant what are plugins and how they are used
+  
 ### Task snippets 
 ![Jenkins Flow 3](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%203.png)
 ![Jenkins Flow 4](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%204.png)
 
-I installed Jenkins, created a pipeline, and defined stages for Build, Test, and Deploy. I wrote a Jenkinsfile to automate these steps. Then, I ran the pipeline in Jenkins, which executed each stage sequentially. Finally, Jenkins successfully completed the pipeline, confirming the CI/CD process was set up correctly. 
+I created a pipeline and wrote the stages for build,test and deploy.The jenkinsfile was used to automate these stages .I Ran the pipeline and executed these stages.
+
 
 # Task 3:SSH
 
 ## What is SSH?
-SSH (**Secure Shell**) is a cryptographic network protocol for securely accessing and managing remote systems over an unsecured network. It provides encrypted communication, authentication, and file transfer. SSH replaces insecure protocols like Telnet and supports key-based authentication, tunneling, and remote command execution, making it essential for secure server administration.
-
+SSH is  a cryptographic network protocol for securing and managing access to the remote systems over and unsecured network. In other words, it is a network protocol that is used for transffering the data over the network.
 ![ssh flow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh%20flow.png)
 
 
-I focused on the generation and handling of SSH key pairs using standard command-line tools. This exercise helped me understand the practical foundations of authentication and secure communication over SSH.
+
 
 ---
 
@@ -72,6 +71,7 @@ Below is a screenshot from the SSH key generation process:
 ![SSH Key Gen](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh_key_gen.png)
 
 
+Ultra mode
 I used the `ssh-keygen` utility to generate a 4096-bit RSA key pair. This involved creating both a private and a public key, which are used for secure, password-less authentication to remote systems.
 
 **Command used:**
@@ -92,10 +92,24 @@ The following SSH commands were learned and used:
 - `find` – Locate files.
 - `du -sh *` – Check file sizes.
 
-### OverTheWire Bandit 
-Successfully completed Bandit levels 0-5,13,18. Gained proficiency in basic SSH operations.
-#### Bandit Level - Hidden File
-The following screenshot shows the solution where the user accesses a hidden file `.hidden` inside the `inhere` directory.
+I utilized the `ssh-keygen -t rsa -b 4096` for the creation of a 4096-bit RSA key pair. The key pair that it created consisted of both a private and a public key. These keys are used for both 
+
+`ssh-keygen -t rsa -b 4096`
+
+Bandit levels 0-5 have been completed. Basic SSH operations were practiced. Could not perform the task with SSH scripting, since the Powershell command failed.
+
+### Learning SSH Commands
+"ssh username@hostname" This command is used to connect to a remote server.
+SSH is for connecting without using the default port.
+`scp` – Copy files to a different computer securely.
+- `cat` – View file contents.
+- `ls` – List files in a directory.
+- `cd` – Change directory.
+- `find` – Locate files.
+- `du -sh *` – Check file sizes.
+
+ # Bandit overtheiwre
+ I completed bandit levels 0-5 and also learnt to complete level 13 and 18 which was related to the task(Writing a SSh script)
 
 ![Bandit Hidden File Solution](https://github.com/MithunSrinivas28/level-2-images/raw/main/level%202%20images/bandit.jpeg)
 
@@ -103,20 +117,13 @@ The following screenshot shows the solution where the user accesses a hidden fil
 
 # Task 4: Terraform
 
-## What is Terraform
-Terraform is an open-source **Infrastructure as Code (IaC)** tool that allows users to define and provision cloud resources in a **declarative** manner. Unlike traditional provisioning methods, Terraform automates the entire process, ensuring consistency, scalability, and efficiency. It supports multiple cloud providers such as AWS, Azure, and Google Cloud, making it a preferred choice for cloud infrastructure management.
+## Terraform: What is it?
+It is known as  Infrastructure as Code (IaC) and is used to define, provision, and manage cloud infrastructure. 
+## **Execution of the task**  
 
-**Helpful analogy for it:**
-Terraform is like a cab driver for your cloud infrastructure.
 
-You tell it where to go (define resources), it plans the best route (terraform plan), and drives you there (terraform apply). If you change your destination (update infra), it adjusts. When the trip is over, you end it (terraform destroy).
-
-## **Task Execution**  
-I installed Terraform and configured it to interact with AWS. The process began with **Terraform initialization**, where I used the command `terraform init` to download and set up necessary provider plugins. Following this, I configured AWS credentials to allow Terraform to create resources in my AWS account.
-
-To deploy an AWS EC2 instance, I defined its configuration in a **Terraform configuration file**. This included specifying the Amazon Machine Image (AMI), instance type, and other key parameters. I then used `terraform plan` to preview the changes and `terraform apply` to provision the instance. Upon successful execution, I verified the instance's status in the **AWS Management Console**, confirming that it was running.
-
-To clean up, I executed `terraform destroy`, which safely removed all deployed infrastructure. This step is crucial in cloud environments to prevent unnecessary resource consumption and costs.
+I learned how to configure Terraform after installing it.I downloaded the required pluggings using the command `terraform init`.
+I created a **Terraform configuration file** to specify the configuration of an AWS EC2 instance before deploying it. This involved choosing the instance type, Amazon Machine Image (AMI), and other important settings. After previewing the changes with `terraform plan`, I provisioned the instance using `terraform apply`. After it was successfully executed, I checked the instance's status in the **AWS Management Console** to make sure it
 ![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
 
 ![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  

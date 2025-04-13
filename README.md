@@ -7,23 +7,23 @@ This is the report of the all the tasks completed in the level 2 of Computing an
 # Task 1: AWS Lambda
 
 #### What is AWS Lambda and Why is it Used?
-AWS lambda is a severless compute sercive which helps to run the events or a code without a server.The users has to pay for the run time of the event or the application which helps in scalability and cost cutting. Its a paradigm shift in the field of cloud which helped to manage the servers in a better way
+AWS lambda is a severless compute service which helps to run the events or a code without a server.The user has to pay for the run time of the event or the application ,this feature helps in scalability and cost cutting. Its a paradigm shift in the field of cloud which helped to manage the servers in a better way.
 
 
 
 ## Snippets of the task
 
 
-Flowchar of the Deploying  a chat app in Aws lambda
+Flowchart of the Deploying  a chat app in Aws lambda
 ![Lambda Task](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/lambda_task.jpg)
  
 ![List of API](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/List%20of%20api.jpeg)
 
 ![WebSocket Connected](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/socketconnected.png)
 
+## Key learnings
 
-
-I learnt how to create a lambda fucntion ,websockets api and link them with different routes know as connect disconnect and sendMessage,I then connect the url with the help of Thunderclient API(i also tried it with Postman API)The below snippets shows that two users being connected
+I learnt how to create a lambda fucntion ,websockets api and link them with different routes know as connect disconnect and sendMessage,I then connected the url with the help of Thunderclient API(i also tried it with Postman API)The below snippets shows that two users being connected
 
 This task helped me to understand how to configure the aws lambdas and Api with permissions and environment variables. I also tried debugging 502 ERROR with the Cloud watch logs
 ### Output 
@@ -35,23 +35,23 @@ This task helped me to understand how to configure the aws lambdas and Api with 
 ---
 
 # Task 2: Intoduction to Jenkins
-Jenkins is a Tool which automates the process of building,,testing and deploying the software with a pipeline. It is fundamentally used for the Core concept fo Devops known as CI/CD .Jenkins is used to integrate the works and versions of a soft seamlessly and provide it to the end users.
+Jenkins is a Tool which automates the process of building,,testing and deploying the software with a pipeline. It helps to understand the fundamental concept fo Devops known as CI/CD .Jenkins is used to integrate the works and versions of a software seamlessly and provide it to the end users.
 
 ![jenkins 1](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%201)
 
 ![fd19fec6-f22a-49f3-8885-ab05d4580c20](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fd19fec6-f22a-49f3-8885-ab05d4580c20.jpg)
 
 ## Key learnings
-- I learnt the concept of CI/CD  and how it works in the the field of Devops
-- I studied how to write a Jenkins file and implement it
-- Got familar with using Jenkins
-- I leant what are plugins and how they are used
+- I learnt the concept of CI/CD  and how it works in the the field of Devops.
+- I studied how to write a Jenkins file and implement it.
+- Got familar with using Jenkins.
+- I leant what are plugins and how they are used.
   
 ### Task snippets 
 ![Jenkins Flow 3](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%203.png)
 ![Jenkins Flow 4](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/jenkins%204.png)
 
-I created a pipeline and wrote the stages for build,test and deploy.The jenkinsfile was used to automate these stages .I Ran the pipeline and executed these stages.
+I created a pipeline and wrote the stages for build,test and deploy.The jenkinsfile was used to automate these stages .I ran the pipeline and executed these stages.
 
 
 # Task 3:SSH
@@ -69,34 +69,6 @@ SSH is  a cryptographic network protocol for securing and managing access to the
 Below is a screenshot from the SSH key generation process:
 
 ![SSH Key Gen](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/ssh_key_gen.png)
-
-
-Ultra mode
-I used the `ssh-keygen` utility to generate a 4096-bit RSA key pair. This involved creating both a private and a public key, which are used for secure, password-less authentication to remote systems.
-
-**Command used:**
-bash
-`ssh-keygen -t rsa -b 4096`
-
-Successfully completed Bandit levels 0-5. Gained proficiency in basic SSH operations.Could not perform the SSH scripting task due to PowerShell command failures
-
-### Learning SSH Commands
-
-The following SSH commands were learned and used:
-- `ssh username@hostname` – To connect to a remote server.
-- `ssh -p <port> username@hostname` – To connect via a non-default port.
-- `scp file user@host:path` – Securely copy files to a remote machine.
-- `cat` – View file contents.
-- `ls` – List files in a directory.
-- `cd` – Change directory.
-- `find` – Locate files.
-- `du -sh *` – Check file sizes.
-
-I utilized the `ssh-keygen -t rsa -b 4096` for the creation of a 4096-bit RSA key pair. The key pair that it created consisted of both a private and a public key. These keys are used for both 
-
-`ssh-keygen -t rsa -b 4096`
-
-Bandit levels 0-5 have been completed. Basic SSH operations were practiced. Could not perform the task with SSH scripting, since the Powershell command failed.
 
 ### Learning SSH Commands
 "ssh username@hostname" This command is used to connect to a remote server.
@@ -118,32 +90,31 @@ SSH is for connecting without using the default port.
 # Task 4: Terraform
 
 ## Terraform: What is it?
-It is known as  Infrastructure as Code (IaC) and is used to define, provision, and manage cloud infrastructure. 
+It is known as  Infrastructure as Code (IaC) and is used to define, provision, and manage cloud infrastructure. It allows users to write declarative configuration files specifying the desired state of infrastructure, and Terraform handles the deployment and changes.
 ## **Execution of the task**  
 
 
 I learned how to configure Terraform after installing it.I downloaded the required pluggings using the command `terraform init`.
-I created a **Terraform configuration file** to specify the configuration of an AWS EC2 instance before deploying it. This involved choosing the instance type, Amazon Machine Image (AMI), and other important settings. After previewing the changes with `terraform plan`, I provisioned the instance using `terraform apply`. After it was successfully executed, I checked the instance's status in the **AWS Management Console** to make sure it
+. After previewing the changes with `terraform plan`, I provisioned the instance using `terraform apply`. After it was successfully executed, I checked the instance's status in the **AWS Management Console** to make sure it worked
 ![Terraform Initialization](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/12499692-c065-4a8d-918b-13160503facb.jpg)  
 
 ![Terraform Applied Successfully](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/5c2fc8d5-1de4-429b-bac1-ce2d1012ce16.jpg)  
 
 ![Terraform Plan - EC2 Instance Creation](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/fc8ad240-40da-4d1a-8cd4-6e61caf80722.jpg)
-### What I learnt 
-- **Understanding Terraform Workflow:** Successfully navigated the process from initialization to deployment and teardown.  
-- **EC2 Instance Deployment:** Created and managed an AWS EC2 instance using Terraform configurations.  
-- **Terraform State Management:** Explored how Terraform tracks resources and maintains state consistency.  
-- **Infrastructure Automation:** Learned how Terraform eliminates manual intervention, ensuring reliable infrastructure provisioning.  
-- **Efficient Resource Management:** Practiced using `terraform destroy` to remove resources, optimizing cloud costs.  
-
+###  Key learnings 
+- I unserstood The terraform workflow
+- I learnt how to create and ec2 instance(I created a ubuntu instance from AIM)
+- I understood some of the importnat terraform commands and implemented it
 
 # Task 5: Wireshark
 
 ### What is Wireshark?
-Wireshark is a free and open-source packet analyzer used for capturing and inspecting network traffic in real-time. It helps diagnose network issues, analyze protocols, and detect security threats. Network administrators, cybersecurity professionals, and developers use it for troubleshooting, optimizing performance, and ensuring secure communications in various environments.
+Wireshark is a free open source toll which is used to analyse the data packets in a particular newtork. It is mainly useful for threat detection and controlling traffic in a particular network
 
 ### What Did I Do in This Task?
-I captured network traffic using Wireshark, applied filters to identify packet loss and retransmissions, and analyzed latency using round-trip time graphs. I examined TCP streams, used statistical tools to interpret data, and diagnosed network issues. Additionally, I saved results for further analysis to improve network performance and security monitoring.
+I captured my own Wifi netwrok  and analysed and understood the different ascpets of the captured data with various inbuilt tools in Wireshark Itself
+I Filtered out certain protocols like tcp and http and analysed them by plotting graphs and seeing the consevations between ports witht the help of different tools
+
 
 ![wireshark](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/wireshark.jpg)
  
@@ -154,43 +125,33 @@ I captured network traffic using Wireshark, applied filters to identify packet l
 
 ### What is Docker?
 
-Think of a **container** as a sealed box that holds your app and everything it depends on. This box works exactly the same wherever you open it—on your laptop, in a data center, or in the cloud
-Docker is a tool that helps you package your application and everything it needs (code, libraries, and settings) into a **container**, so it can run the same way on any computer, server, or cloud.
+Docker is a tool in which you cna pack your application into a container including all its versions.You can run your docker container in any system without installing your application into the OS again 
 ## Docker Workflow
 ![docker workflow](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/docker%20workflow.png)
 ---
 ## Creating a Docker image
 ![creating a container](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/creating%20a%20container.png)
-# Dockerfile Explanation
-#### Defines a Base Image:
-`FROM python:3.10-slim` → Uses a lightweight Python 3.10 image.
-#### Sets the Working Directory:
-`WORKDIR /app` → All commands will run inside `/app`.
-#### Copies Files:
-`COPY . .` → Copies all files from the current directory to the container.
-#### Runs a Python Script:
-`CMD ["python", "-c", "print('Hello from Docker!')"]` → Executes a one-liner Python script when the container starts.
 
+## Key learnings
+- I learnt the concept of how docker works
+- I basically understood how to write a dockerfile
+- I learnt how to create a docker container with the help of dockerfile
 ---
 # Task 7:Docker Spyware
 
-## **1. What is Docker Spyware?**
-Docker spyware is a **containerized application** designed to **monitor a folder for new files** (such as images) and automatically **send them to a remote server**. This concept is useful for:
-- **Automated file monitoring**
-- **Remote data transfer**
-- **Surveillance and security applications**
----
-## Watchdog in Python: Real-Time File System Monitoring
-Python’s Watchdog module enables real-time monitoring of file system changes. It detects file creations, modifications, deletions, and movements using event handlers. Ideal for logging, automation, and security, Watchdog is widely used in file tracking, data pipelines, and intrusion detection for efficient and responsive system monitoring.
+## 1. What is Docker Spyware?
+Docker spyware is the extened task of docker cretaion where a pyton spyware is being setup with the help of the python library known as Watchdog. the python code is linked the the docker container which monitors the changes that is being done in the dcoker container.I very useful tool that detect threats and changes done in the particuar container
 
-## **2. Task Summary**
-### **What I Did:**
-- Created a **Python script** to monitor a folder for new images.
-- Built a **Docker container** to run the script.
-- Tested the system by copying files to the monitored folder.
-- Verified automatic file uploads and troubleshooting errors.
+ 
+--
 
-This setup is a Docker-based spyware simulation, where a script is actively watching a folder inside a container. Any new image added triggers an alert, indicating real-time surveillance on file changes
+## Key learnings
+- I learnt how to work with the watchdog library
+- I learnt how to build a docker container
+- Tested the system by adding an image into the file
+- Created a spyware that could monitor my container
+
+This is the code snippet of the spyware which detects that the BIRD image is being added to the container
 ![spyware](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/spyware.png)
 
 ---
@@ -199,8 +160,8 @@ This setup is a Docker-based spyware simulation, where a script is actively watc
 In this task, I automated flight searching on Google Flights using Selenium. The process involved opening the website, entering departure and destination cities, selecting travel dates that is bengaluru to hyderabad, and triggering the search. I then extracted flight prices  and saved them in a CSV file for further analysis.
 
 ## Intro to dynamic webscraping
-**Dynamic Scraping:** Extracting data from pages that load content dynamically using JavaScript (e.g., Selenium)
-This is the reason we use selenium instead of beautifulsoup
+
+The dynamic webscraping includes penetrating thorugh Javascript parts of the websites The selenium libarary used in the task is a dynamic tool whereas the Beautifulsoup used in the previous level is a static webscraper which only reads the HTML.
 
 ![CSV BLR to HYD](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/csv_blr_to_hyd.jpg)
 
@@ -209,31 +170,27 @@ This is the reason we use selenium instead of beautifulsoup
 
 # Task 9:Hashing
 ###  What is Hashing?
-Hashing is the process of converting input data (e.g., a password) into a fixed-length, unique hash value using a mathematical function. It is one-way, meaning the original input cannot be retrieved from the hash. Hashing is commonly used in password security, data integrity, and digital signatures.
-
-### Why use hashing when its not reversible
-
-The main purpose of hashing, especially when dealing with passwords or sensitive data, is to ensure security in case of unauthorized access, while still allowing for the verification of that data.
+Hashing is a one way tool which is used to secure passwords and verify them without withdrawing the original data .Hashing refers to the process of generating a fixed-size output from an input of variable size using the mathematical formulas known as hash functions.
 
 ![hashing](https://raw.githubusercontent.com/MithunSrinivas28/level-2-images/main/level%202%20images/hashing.png)
 ### What I Learned About Hashing
-SHA-256 – A widely used cryptographic hash function that generates a 256-bit fixed-length hash.
 
-Salting – Adding a random unique value (salt) to passwords before hashing to prevent attacks like rainbow tables.
-
-PBKDF2 – A hashing method that applies multiple iterations (e.g., 100,000 rounds) to slow down brute-force attacks.
+-I learnt how SHA 256 algorithm works and the math behind it.
+- I learnt why salting is used and how it make the hashing process my secure
+- I implemented a basic hashing script which stores the password of the users
+- I understood that no hashed data is same even though the text might be similar
 
 ---
 # Task 10:N Map
 I got familiar with kali linux and Basic commands of Nmap.I learnt the importance of SSh and the types of penetration testing.I did scanning of of a target ip and found the open ports and their version
 
 Ping
-`ping` command is a network utility used to test the **reachability** of a host on an IP network. It is commonly used to check if a particular system (device, server, or host) is online and responding to network requests.
+` It is commonly used to check if a particular system (device, server, or host) is online and responding to network requests.
 
 ![Pasted image 20241023162006](https://github.com/user-attachments/assets/a0bbddcb-3c45-4e1f-9fb5-ad33c79dc073)
 
   ### SN command
 
-The `-sn` option is used to perform a **ping scan** (also known as a "no port scan"). When you use this option, Nmap disables the default port scanning phase and instead focuses on **host discovery**. It checks whether the hosts on the network are up (alive) without probing their open ports.
+The `-sn` option is used to perform a **ping scan** (also known as a "no port scan").It checks whether the hosts on the network are up (alive) without probing their open ports.
 ![Pasted image 20241023180758](https://github.com/user-attachments/assets/81e38c11-ff09-464e-b7fc-c8122d0c62c6)
 
